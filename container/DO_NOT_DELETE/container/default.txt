@@ -1,0 +1,2 @@
+welcome to your asteroid container instance!
+you are welcome to delete this file if you want to
