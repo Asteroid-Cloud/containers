@@ -1,0 +1,16 @@
+{
+  "name": "asteroid-panel",
+  "version": "1.0.0",
+  "description": "Web panel for managing multiple Asteroid Container Server instances.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "axios": "^1.9.0",
+    "ejs": "^3.1.10",
+    "bootstrap": "^5.3.6"
+  }
+}
