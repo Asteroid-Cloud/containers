@@ -1,0 +1,48 @@
+{
+    "version": "1.0",
+    "id": "example-container",
+    "name": "Example Container",
+    "description": "This is an example container configuration for Asteroid.",
+    "port": 3000,
+    "roles": [
+        "admin",
+        "guest",
+        "user",
+        "premium"
+    ],
+    "maxContainerSize": "100GB",
+    "maxIndividualFileSize": "50MB",
+    "defaultRole": "guest",
+    "permissions": {
+        "admin": {
+            "container.administrator": true,
+            "container.files.*": true,
+            "container.editConfig.*": true,
+            "container.startStop.*": true,
+            "container.viewLogs.*": true,
+            "container.files.maxTotalUploadSize": "unlimited",
+            "container.files.maxIndividualUploadSize": "unlimited"
+        },
+        "guest": {
+            "container.files.view": true,
+            "container.files.upload": false
+        },
+        "user": {
+            "container.files.view": true,
+            "container.files.upload": true,
+            "container.files.maxTotalUploadSize": "5GB",
+            "container.files.maxIndividualUploadSize": "10MB"
+        },
+        "premium": {
+            "container.files.view": true,
+            "container.files.upload": true,
+            "container.files.maxTotalUploadSize": "10GB",
+            "container.files.maxIndividualUploadSize": "50MB"
+        }
+    },
+    "allowedRequestDomains": ["*"],
+    "deniedRequestDomains": [],
+    "publicFileAccess": true,
+    "publicFiles": [],
+    "nonPublicFiles": []
+}
