@@ -55,7 +55,7 @@ The panel is a separate Node.js project for managing multiple Asteroid container
 ## Notes
 - The container and panel are independent Node.js projects. Run them separately.
 - The panel never accesses files directly; all management is via the container's API.
-- For full documentation, see the `help/` directory in the root project.
+- For full documentation, our documentation on the project [here](https://asteroid-1.gitbook.io/asteroid-docs/asteroid-containers/overview)
 
 ---
 
